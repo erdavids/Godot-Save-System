@@ -1,21 +1,19 @@
 extends Node2D
 
+var DisplayValue = 0
+
 func _ready():
 	pass 
 
 # Buttons
-
 func SubtractPressed():
-	get_node("/root/SaveSystem").DisplayValue -= 1
-
+	DisplayValue -= 1
 
 func AddPressed():
-	get_node("/root/SaveSystem").DisplayValue += 1
-
+	DisplayValue += 1
 
 func SavePressed():
-	get_node("/root/SaveSystem").saveValue()
-
+	pass
 
 func LoadPressed():
-	get_node("/root/SaveSystem").loadValue()
+	pass

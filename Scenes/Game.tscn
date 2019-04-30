@@ -26,6 +26,7 @@ valign = 1
 script = ExtResource( 3 )
 
 [node name="Buttons" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="SubtractButton" type="TextureButton" parent="Buttons"]
 editor/display_folded = true
