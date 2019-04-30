@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Game.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/GugiFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Display.gd" type="Script" id=3]
-[ext_resource path="res://Scenes/SaveSystem.gd" type="Script" id=4]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -105,9 +104,6 @@ margin_bottom = 108.809
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.431373, 0.431373, 0.431373, 1 )
 text = "Load"
-
-[node name="SaveSystem" type="Node2D" parent="."]
-script = ExtResource( 4 )
 [connection signal="pressed" from="Buttons/SubtractButton" to="." method="SubtractPressed"]
 [connection signal="pressed" from="Buttons/AddButton" to="." method="AddPressed"]
 [connection signal="pressed" from="Buttons/Save" to="." method="SavePressed"]

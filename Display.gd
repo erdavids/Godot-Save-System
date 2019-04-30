@@ -5,5 +5,5 @@ func _ready():
 	pass
 	
 func _process(delta):
-	text = str(get_parent().DisplayValue)
+	text = str(get_node("/root/SaveSystem").DisplayValue)
 
